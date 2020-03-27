@@ -9,9 +9,9 @@ public class JobLevel {
 
     private String name;
 
-    private String titlelevel;
-    @JsonFormat(pattern = "yyyy-MM-dd hh:mm:ss",timezone = "Asia/Shanghai")
-    private Date createdate;
+    private String titleLevel;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "Asia/Shanghai")
+    private Date createDate;
 
     private Boolean enabled;
 
@@ -31,20 +31,20 @@ public class JobLevel {
         this.name = name == null ? null : name.trim();
     }
 
-    public String getTitlelevel() {
-        return titlelevel;
+    public String getTitleLevel() {
+        return titleLevel;
     }
 
-    public void setTitlelevel(String titlelevel) {
-        this.titlelevel = titlelevel == null ? null : titlelevel.trim();
+    public void setTitleLevel(String titleLevel) {
+        this.titleLevel = titleLevel == null ? null : titleLevel.trim();
     }
 
-    public Date getCreatedate() {
-        return createdate;
+    public Date getCreateDate() {
+        return createDate;
     }
 
-    public void setCreatedate(Date createdate) {
-        this.createdate = createdate;
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
     }
 
     public Boolean getEnabled() {
